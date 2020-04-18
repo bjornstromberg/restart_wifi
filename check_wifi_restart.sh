@@ -16,7 +16,7 @@ done
 
 if [ ! -z $RESTART_LIST ]
 then
-  echo "$(date +"%F_%T"): restarting wifi - issues with $RESTART_LIST"
+  echo "$(date +"%F_%T"): restarting wifi - no clients or issues with $RESTART_LIST"
   wifi down
   sleep 1
   wifi up
