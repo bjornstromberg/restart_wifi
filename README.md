@@ -13,7 +13,7 @@ to use wifi restart:
   * run 'opkg update && opkg install nano'
 * edit cron with nano 
   * run 'EDITOR=nano crontab -e'
-  * add '*/15 * * * * /bin/check_wifi_restart.sh > /tmp/log/restart_wifi.log'
+  * add '*/15 * * * * /bin/check_wifi_restart.sh >> /tmp/log/restart_wifi.log'
     * /tmp is cleard on router restarts, 
     this way the log wont fill up the overlay partition, and we get some info how often the issue arises..
     Note: it will restart wifi alot if nobody is home, and not both interfaces are in use..
